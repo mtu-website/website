@@ -10,14 +10,14 @@ import Hero from '../components/home/hero';
 import Ranking from '../components/home/ranking';
 import Statement from '../components/home/statement';
 import StudyAtMtu from '../components/home/study';
-// import TopBanner from '../components/home/topBanner';
+import TopBanner from '../components/home/topBanner';
 
 export default function Home() {
   const themeColor = '#FFFFFF';
   const fontColor = '#84B000';
   return (
     <main>
-      {/* <TopBanner /> */}
+      <TopBanner />
       {/* <Modal /> */}
       <Header themeColor={themeColor} fontColor={fontColor} />
       <Hero />
