@@ -18,7 +18,7 @@ const halls = [
   {
     id: '2',
     name: 'Mountain Top University - Daniel New Hall',
-    imageUrl: '/images/why-mtu/hall_1.png',
+    imageUrl: '/images/why-mtu/hall_2.png',
     mobileImageUrl: '/images/why-mtu/hall_2_mobile.png',
   },
 ];
