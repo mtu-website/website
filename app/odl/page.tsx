@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 
@@ -7,6 +8,11 @@ import Services from '@/components/odl/services';
 
 import Courses from '@/components/odl/courses';
 import WelcomeNote from '@/components/odl/welcome-note';
+
+export const metadata: Metadata = {
+  title: 'Open Distance Learning',
+  description: '',
+};
 
 export default function Odl() {
   const themeColor = '#FFFFFF';

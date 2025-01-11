@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Aid from '@/components/study-at-mtu/aid';
@@ -7,6 +9,11 @@ import Introduction from '@/components/study-at-mtu/introduction';
 import Modes from '@/components/study-at-mtu/modes';
 import Pathways from '@/components/study-at-mtu/pathways';
 import Redirects from '@/components/study-at-mtu/redirects';
+
+export const metadata: Metadata = {
+  title: 'Study at MTU',
+  description: '',
+};
 
 export default function StudyAtMtu() {
   const themeColor = '#FFFFFF';

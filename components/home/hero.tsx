@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="bg-black bg-[url('/images/home/hero-background-2.png')] bg-[center_top_-70px] bg-repeat sm:bg-[center_top_0px] lg:h-fit lg:bg-[url('/images/home/hero-background.png')] lg:bg-cover xl:bg-[center_top_-100px]">
+    <section className="bg-black lg:bg-transparent bg-[url('/images/home/hero-background-2.png')] bg-[center_top_-70px] bg-repeat sm:bg-[center_top_0px] lg:h-fit lg:bg-[url('/images/home/hero-background.png')] lg:bg-cover xl:bg-[center_top_-100px]">
       <div className="flex flex-col-reverse items-stretch justify-between lg:flex-row lg:gap-4">
         <div className="px-6 py-24 lg:py-0 xl:px-12">
           <Image

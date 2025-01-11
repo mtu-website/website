@@ -49,36 +49,41 @@ const centers = [
 const units = [
   {
     id: '1',
+    name: 'Library',
+    href: 'https://library.mtu.edu.ng',
+  },
+  {
+    id: '2',
     name: 'Registry',
     href: '/',
   },
   {
-    id: '2',
+    id: '3',
     name: 'Bursary',
     href: '/',
   },
   {
-    id: '3',
+    id: '4',
     name: 'Medical Center',
     href: '/',
   },
   {
-    id: '4',
+    id: '5',
     name: 'Centre for New Life',
     href: '/',
   },
   {
-    id: '5',
+    id: '6',
     name: 'Chaplaincy',
     href: '/',
   },
   {
-    id: '6',
+    id: '7',
     name: 'Open Educational Resource',
     href: '/',
   },
   {
-    id: '7',
+    id: '8',
     name: 'Student Affairs',
     href: '/',
   },

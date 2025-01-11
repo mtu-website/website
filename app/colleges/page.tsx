@@ -2,8 +2,8 @@ import AllColleges from '@/components/college/all-colleges';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'MTU || Our Colleges',
-  description: 'Explore blah blah blah',
+  title: 'Our Colleges',
+  description: '',
 };
 
 import Footer from '@/components/footer';

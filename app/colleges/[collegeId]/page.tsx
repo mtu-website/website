@@ -27,7 +27,7 @@ async function getCollegeData(collegeId: string) {
   const college = colleges.find(
     (college) => generateSlug(college.name) === collegeId,
   );
-  console.log("college", college);
+  console.log('college', college);
 
   if (!college) {
     throw new Error(`College not found`);

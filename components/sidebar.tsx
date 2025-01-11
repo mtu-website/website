@@ -110,7 +110,7 @@ const quickLinks = [
   {
     id: '3',
     destination: 'postgraduate admission',
-    href: '/study-at-mtu/postgraduate',
+    href: 'https://postgraduate.mtu.edu.ng',
   },
   {
     id: '4',

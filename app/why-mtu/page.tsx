@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import CampusLife from '@/components/why-mtu/campus-life';
@@ -10,6 +12,11 @@ import Scholarships from '@/components/why-mtu/scholarships';
 import Stories from '@/components/why-mtu/stories';
 import Testimonials from '@/components/why-mtu/testimonials';
 import VirtualTour from '@/components/why-mtu/virtual-tour';
+
+export const metadata: Metadata = {
+  title: 'Why MTU',
+  description: '',
+};
 
 export default function WhyMtu() {
   const themeColor = '#FFFFFF';

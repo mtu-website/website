@@ -22,7 +22,7 @@ const academicPathwaysLinks = [
     id: 3,
     image: '/images/study-at-mtu/postgraduate.png',
     title: 'Postgraduate',
-    href: '/study-at-mtu/postgraduate',
+    href: 'https://postgraduate.mtu.edu.ng',
     alt: 'Mountain Top University Graduate Hat',
   },
   {

@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 
@@ -8,6 +10,11 @@ import Curriculum from '@/components/programmes/curriculum';
 import Hero from '@/components/programmes/hero';
 import HeroBottom from '@/components/programmes/hero-bottom';
 import Navbar from '@/components/programmes/navbar';
+
+export const metadata: Metadata = {
+  title: 'Our Programmes',
+  description: '',
+};
 
 export default function Programmes() {
   const themeColor = '#FFFFFF';

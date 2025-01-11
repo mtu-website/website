@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Introduction from '@/components/research/introduction';
@@ -9,6 +10,11 @@ import Journals from '@/components/research/journals';
 import Collaboration from '@/components/research/collaboration';
 
 import Hero from '@/components/research/hero';
+
+export const metadata: Metadata = {
+  title: 'Our Research',
+  description: '',
+};
 
 export default function Research() {
   const themeColor =
