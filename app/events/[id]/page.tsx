@@ -31,13 +31,13 @@ export default async function EventDetail({ params }: { params: Params }) {
       <div className="items-start justify-between gap-12 px-4 py-6 sm:flex lg:px-12 lg:pb-24">
         <div>
           <h3 className="font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#0E4510]">
-            conference
+            event
           </h3>
           <h1 className="font-sans text-[24px] font-semibold leading-10 tracking-[-4%] text-[#84B000] lg:text-[45px] lg:leading-[64px] xl:text-[56px] xl:leading-[71.12px]">
             {event.eventName}
           </h1>
           <Link
-            href=""
+            href={replacePublicWithStorage(event.url)}
             target="_blank"
             className="my-6 flex w-[222px] items-center rounded-[1px] bg-[#6C006D] lg:my-12 lg:h-[64px] lg:w-[317px]"
           >
@@ -45,7 +45,7 @@ export default async function EventDetail({ params }: { params: Params }) {
               <PlusIcon className="h-auto w-[18.55] lg:w-6" />
             </div>
             <span className="mx-auto font-mono text-sm font-semibold uppercase leading-[21px] tracking-[-2%] text-white lg:text-xl lg:leading-[30px]">
-              add to calender
+              Explore Banner
             </span>
           </Link>
           <div className="">
@@ -157,7 +157,7 @@ export default async function EventDetail({ params }: { params: Params }) {
           alt="Calendar Icon"
           width={2000}
           height={2000}
-          className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:h-full xl:w-auto"
+          className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:w-auto"
           // className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:w-[648px]"
         />
 

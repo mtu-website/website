@@ -10,22 +10,22 @@ import {
 const faqs = [
   {
     id: 1,
-    question: 'Getting your transcript',
+    question: 'Can I get admission into MTU without JAMB?',
     answer: '',
   },
   {
     id: 2,
-    question: 'What if I don’t receive my certificate?',
+    question: 'How do I log in to my student portal?',
     answer: '',
   },
   {
     id: 3,
-    question: 'The name on my certificate is wrong',
+    question: 'How can I get access to my MTU e-mail?',
     answer: '',
   },
   {
     id: 4,
-    question: 'Can I get a replacement certificate?',
+    question: 'How can I get my transcript',
     answer: '',
   },
   {

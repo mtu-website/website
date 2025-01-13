@@ -36,7 +36,7 @@ export default function NewsDetail({ news }: RecentNewsProps) {
       <div className="flex flex-col justify-between lg:flex-row">
         {modifiedNews.slice(0, 3).map((item) => (
           <article
-            className="mb-12 mr-3 lg:w-[290px] xl:w-[400px] 2xl:w-[520px]"
+            className="mb-12 lg:mr-6 lg:w-[290px] xl:w-[400px] 2xl:w-[520px]"
             key={item.id}
           >
             <div className="h-[230px] w-full lg:h-[300px]">

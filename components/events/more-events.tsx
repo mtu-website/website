@@ -11,7 +11,7 @@ const events = await fetch(`https://mtu.edu.ng/api/mtu-events`).then((res) =>
 
 export default function MoreEvents() {
   // const moreEvents: Event[] = events.slice(0, 2);
-  const moreEvents: Event[] = pickRandomEvents(events, 2);
+  const moreEvents: Event[] = pickRandomEvents(events, 1);
   return (
     <div className="h-fit">
       <h4 className="mb-3 font-sans text-2xl font-semibold leading-9 tracking-[-2%] text-[#5E5E5E]">
