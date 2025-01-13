@@ -2,14 +2,16 @@ import Image from 'next/image';
 import { Event } from '@/lib/types';
 
 // import { events } from '@/lib/data';
-import { replacePublicWithStorage } from '@/lib/utils';
+import { replacePublicWithStorage, pickRandomEvents } from '@/lib/utils';
+import Link from 'next/link';
 
 const events = await fetch(`https://mtu.edu.ng/api/mtu-events`).then((res) =>
   res.json(),
 );
 
 export default function MoreEvents() {
-  const moreEvents: Event[] = events.slice(0, 2);
+  // const moreEvents: Event[] = events.slice(0, 2);
+  const moreEvents: Event[] = pickRandomEvents(events, 2);
   return (
     <div className="h-fit">
       <h4 className="mb-3 font-sans text-2xl font-semibold leading-9 tracking-[-2%] text-[#5E5E5E]">
@@ -18,7 +20,10 @@ export default function MoreEvents() {
       {moreEvents.map((event) => {
         return (
           <div className="mb-9" key={event.id}>
-            <div className="relative mb-3 w-full overflow-hidden lg:w-fit">
+            <Link
+              href={`/events/${event.uniqueName}`}
+              className="relative mb-3 w-full overflow-hidden lg:w-fit"
+            >
               <Image
                 src={replacePublicWithStorage(event.url)}
                 alt={event.title || 'Mountain Top University Event image'}
@@ -26,11 +31,11 @@ export default function MoreEvents() {
                 height={2000}
                 className="h-[129px] w-full object-cover object-top lg:h-[185px] lg:min-w-[433px]"
               />
-            </div>
+            </Link>
             <article className="2xl:w-fit">
               <div className="flex h-full flex-col justify-between">
                 <div>
-                  <p className="mb-2 font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#5E5E5E]">
+                  <p className="my-2 font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#5E5E5E]">
                     event
                   </p>
                   <h1 className="mb-3 w-auto font-sans text-xl font-semibold leading-[35.76px] tracking-[-4%] text-[#5E5E5E] lg:max-h-[144px] lg:w-[433px]">

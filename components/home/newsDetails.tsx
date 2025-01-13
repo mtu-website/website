@@ -22,8 +22,8 @@ export default function NewsDetail({ news }: RecentNewsProps) {
     const updatedNews: News[] = news.map((item) => ({
       ...item,
       uniqueName: item.uniqueName,
-      title: truncateByCharacters(item.title, 100),
-      content: truncateByCharacters(convertToPlainText(item.content), 70),
+      title: truncateByCharacters(item.title, 85),
+      content: truncateByCharacters(convertToPlainText(item.content), 60),
       created_at: formatDate(new Date(item.created_at)),
       updated_at: formatDate(new Date(item.updated_at)),
     }));

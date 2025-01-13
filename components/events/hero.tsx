@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
         <div className="h-[231px] w-full overflow-hidden sm:h-[400px] lg:my-0 lg:ml-6 lg:h-full lg:w-fit">
           <Image
-            src="/images/events/hero_image.png"
+            src="/images/events/calender_image3.svg"
             alt="Mountain Top University Events"
             width={2000}
             height={2000}

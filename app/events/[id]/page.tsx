@@ -3,7 +3,11 @@ import Link from 'next/link';
 
 import { PlusIcon } from '@radix-ui/react-icons';
 
-import { formatDateToText, formatTime } from '@/lib/utils';
+import {
+  formatDateToText,
+  formatTime,
+  replacePublicWithStorage,
+} from '@/lib/utils';
 
 import MoreEvents from '@/components/events/more-events';
 import SpeakersCarousel from '@/components/events/speakers-carousel';
@@ -146,18 +150,25 @@ export default async function EventDetail({ params }: { params: Params }) {
         </div>
 
         <Image
-          src="/images/events/calender_image3.svg"
+          src={
+            replacePublicWithStorage(event.url) ||
+            '/images/events/calender_image3.svg'
+          }
           alt="Calendar Icon"
-          width="300"
-          height="300"
-          className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:w-[648px]"
+          width={2000}
+          height={2000}
+          className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:h-full xl:w-auto"
+          // className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:w-[648px]"
         />
 
         <Image
-          src="/images/events/calender_image_mobile.svg"
+          src={
+            replacePublicWithStorage(event.url) ||
+            '/images/events/calender_image_mobile.svg'
+          }
           alt="Calendar Icon"
-          width="300"
-          height="300"
+          width={2000}
+          height={2000}
           className="visible mt-6 h-auto w-full sm:hidden"
         />
       </div>
