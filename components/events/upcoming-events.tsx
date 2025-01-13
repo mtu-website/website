@@ -39,7 +39,7 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
         ...event,
         uniqueName: event.uniqueName,
         title: truncateByCharacters(event.eventName, 40),
-        content: truncateByCharacters(convertToPlainText(event.content), 50),
+        content: truncateByCharacters(convertToPlainText(event.content), 70),
         startTime: formatTime(event.startTime),
         endTime: formatTime(event.endTime),
         startDate: formatDateToText(event.startDate),
