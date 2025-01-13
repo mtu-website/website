@@ -76,9 +76,11 @@ export default function NewsDetail({
           {/* <p className="my-4 font-sans text-sm font-normal leading-8 tracking-[-4%] text-[#434343] lg:text-[16px] lg:leading-[34px]">
             {news.content}
           </p> */}
-          <p className="my-4 font-sans text-sm font-normal leading-8 tracking-[-4%] text-[#434343] lg:text-[16px] lg:leading-[34px]">
-            <div dangerouslySetInnerHTML={{ __html: news.content }} />
-          </p>
+
+          <div
+            className="my-4 font-sans text-sm font-normal leading-8 tracking-[-4%] text-[#434343] lg:text-[16px] lg:leading-[34px]"
+            dangerouslySetInnerHTML={{ __html: news.content }}
+          />
         </article>
         <div className="grid grid-cols-1">
           <div className="mb-4 h-[2px] w-[85%] justify-self-end bg-[#545454] underline"></div>
