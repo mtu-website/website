@@ -18,6 +18,7 @@ import {
   convertToPlainText,
   formatDate,
   truncateByCharacters,
+  replacePublicWithStorage,
 } from '@/lib/utils';
 
 import { News, RecentNewsProps } from '@/lib/types';
@@ -41,6 +42,7 @@ export default function RecentNews({ news }: RecentNewsProps) {
       content: truncateByCharacters(convertToPlainText(item.content), 50),
       created_at: formatDate(new Date(item.created_at)),
       updated_at: formatDate(new Date(item.updated_at)),
+      // url: replacePublicWithStorage(item.url),
     }));
     setModifiedNews(updatedNews);
   }, [news]);
@@ -96,7 +98,7 @@ export default function RecentNews({ news }: RecentNewsProps) {
           <article className="mb-12 xl:w-[380px]" key={item.id}>
             <div className="h-[230px] w-full">
               <Image
-                src="/images/mtu_image_test.jpg"
+                src={replacePublicWithStorage(item.url)}
                 width="300"
                 height="224"
                 alt="News Image"

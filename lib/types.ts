@@ -13,6 +13,7 @@ export type News = {
   created_at: string;
   updatedBy: string;
   updated_at: string;
+  url: string;
 };
 
 export type RecentNewsProps = {
@@ -44,9 +45,15 @@ export type Event = {
       updatedBy: string;
       created_at: string;
       updated_at: string;
+      url: string;
     },
   ): Event[];
   id: number;
+  title: string;
+  endMonth: string;
+  startMonth: string;
+  year: string;
+  venue: string;
   eventId: string;
   uniqueName: string;
   imageId: string;
@@ -67,6 +74,7 @@ export type Event = {
   created_at: string;
   updated_at: string;
   isUpcoming: boolean;
+  url: string;
 };
 
 export type UpcomingEvent = {
@@ -74,6 +82,10 @@ export type UpcomingEvent = {
 };
 
 export type PastEvent = {
+  event: Event[];
+};
+
+export type MoreEvent = {
   event: Event[];
 };
 

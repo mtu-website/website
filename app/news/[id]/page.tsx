@@ -2,7 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { use } from 'react';
 
-import { formatDate, truncateByCharacters } from '@/lib/utils';
+import {
+  formatDate,
+  truncateByCharacters,
+  replacePublicWithStorage,
+} from '@/lib/utils';
 
 import {
   InstagramLogoIcon,
@@ -50,12 +54,15 @@ export default function NewsDetail({
             </div>
           </div>
         </div>
-        <div className="h-full w-full py-6">
+        <div className="mx-auto h-full w-full py-6 lg:h-full lg:w-full">
           <Image
-            src={news?.imageUrl || '/images/mtu_image_test.jpg'}
-            alt={news?.title || 'Default'}
-            width="808"
-            height="462"
+            src={
+              replacePublicWithStorage(news?.url) ||
+              '/images/mtu_image_test.jpg'
+            }
+            alt={news?.title || 'Mountain Top University News'}
+            width={2000}
+            height={2000}
             className="mx-auto h-full w-auto object-cover object-center"
           />
         </div>

@@ -1,9 +1,15 @@
 import Image from 'next/image';
+import { Event } from '@/lib/types';
 
-import { events } from '@/lib/data';
+// import { events } from '@/lib/data';
+import { replacePublicWithStorage } from '@/lib/utils';
+
+const events = await fetch(`https://mtu.edu.ng/api/mtu-events`).then((res) =>
+  res.json(),
+);
 
 export default function MoreEvents() {
-  const moreEvents = events.slice(0, 2);
+  const moreEvents: Event[] = events.slice(0, 2);
   return (
     <div className="h-fit">
       <h4 className="mb-3 font-sans text-2xl font-semibold leading-9 tracking-[-2%] text-[#5E5E5E]">
@@ -14,18 +20,18 @@ export default function MoreEvents() {
           <div className="mb-9" key={event.id}>
             <div className="relative mb-3 w-full overflow-hidden lg:w-fit">
               <Image
-                src={event.image}
-                alt={event.title}
-                width={313}
-                height={135}
-                className="h-[129px] w-full object-cover object-center lg:h-[135px] lg:min-w-[433px]"
+                src={replacePublicWithStorage(event.url)}
+                alt={event.title || 'Mountain Top University Event image'}
+                width={2000}
+                height={2000}
+                className="h-[129px] w-full object-cover object-top lg:h-[185px] lg:min-w-[433px]"
               />
             </div>
             <article className="2xl:w-fit">
               <div className="flex h-full flex-col justify-between">
                 <div>
                   <p className="mb-2 font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#5E5E5E]">
-                    conference
+                    event
                   </p>
                   <h1 className="mb-3 w-auto font-sans text-xl font-semibold leading-[35.76px] tracking-[-4%] text-[#5E5E5E] lg:max-h-[144px] lg:w-[433px]">
                     {event?.title}
@@ -69,7 +75,7 @@ export default function MoreEvents() {
                       </span>
                     ) : (
                       <span className="text-xs text-[#5E5E5E] lg:text-[14px]">
-                        {event?.startDate}, {event?.year}
+                        {event?.startDate} - {event?.endDate}
                       </span>
                     )}
                   </div>
@@ -87,7 +93,7 @@ export default function MoreEvents() {
                       ></path>
                     </svg>
                     <span className="text-xs text-[#5E5E5E] lg:text-[14px]">
-                      {event?.venue}
+                      {event?.location}
                     </span>
                   </div>
                 </div>

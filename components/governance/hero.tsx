@@ -17,7 +17,7 @@ export default function Hero() {
           environment for staff and students.
         </p>
         <Link
-          href="/"
+          href="https://drive.google.com/file/d/1qchuBhZZW4zqVdQJZ1MDDRd48Hjoqqgs/view?usp=sharing"
           target="_blank"
           className="mx-auto flex h-auto w-fit items-center gap-3 bg-[#6C006D] px-[15px] py-[10px] text-white"
         >

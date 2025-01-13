@@ -18,6 +18,7 @@ import {
   formatDateToText,
   formatTime,
   truncateByCharacters,
+  replacePublicWithStorage,
 } from '@/lib/utils';
 
 interface PastEventsProps {
@@ -38,12 +39,14 @@ const PastEvents: React.FC<PastEventsProps> = ({ events }) => {
         ...event,
         uniqueName: event.uniqueName,
         title: truncateByCharacters(event.eventName, 40),
+        theme: truncateByCharacters(event.theme, 70),
         content: truncateByCharacters(convertToPlainText(event.content), 50),
         startTime: formatTime(event.startTime),
         endTime: formatTime(event.endTime),
         startDate: formatDateToText(event.startDate),
         endDate: formatDateToText(event.endDate),
         location: truncateByCharacters(event.location, 50),
+        url: replacePublicWithStorage(event.url),
         isUpcoming,
       };
     });
@@ -79,14 +82,14 @@ const PastEvents: React.FC<PastEventsProps> = ({ events }) => {
               .map((event) => (
                 <CarouselItem
                   key={event.id}
-                  className="flex w-full gap-6 sm:basis-2/3 lg:basis-1/3"
+                  className="flex h-fit w-full gap-6 sm:basis-2/3 lg:basis-1/3"
                 >
                   {/* text */}
                   <article className="2xl:w-fit">
                     <div className="flex h-full flex-col justify-between">
                       <div>
                         <p className="mb-6 font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#E54EE8]">
-                          conference
+                          event
                         </p>
                         <h1 className="mb-6 max-h-[216px] w-[157.33px] font-sans text-[18px] font-semibold leading-[30px] tracking-[-4%] text-[#0F0F0F] lg:w-[180px] lg:text-xl lg:leading-8">
                           {event.theme}
@@ -157,14 +160,14 @@ const PastEvents: React.FC<PastEventsProps> = ({ events }) => {
                   {/* image */}
                   <Link
                     href={`/events/${event.uniqueName}`}
-                    className="relative w-fit overflow-hidden"
+                    className="relative h-[387px] w-[189.33px] overflow-hidden lg:min-h-[440px] xl:min-w-[300px]"
                   >
                     <Image
-                      src={'/images/event-placeholder-2.png'}
+                      src={event.url}
                       alt={event.theme}
-                      width={189.33}
-                      height={387}
-                      className="min-w-[300px] object-cover object-center lg:min-h-[440px]"
+                      width={2000}
+                      height={2000}
+                      className="h-full w-full object-cover object-center"
                     />
                   </Link>
                 </CarouselItem>

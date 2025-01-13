@@ -16,6 +16,7 @@ import {
   formatDateToText,
   formatTime,
   truncateByCharacters,
+  replacePublicWithStorage,
 } from '@/lib/utils';
 
 export default function EventDetails({ events }: { events: Event }) {
@@ -38,6 +39,7 @@ export default function EventDetails({ events }: { events: Event }) {
         startDate: formatDateToText(event.startDate),
         endDate: formatDateToText(event.endDate),
         location: truncateByCharacters(event.location, 50),
+        url: replacePublicWithStorage(event.url),
         isUpcoming,
       };
     });
@@ -62,7 +64,7 @@ export default function EventDetails({ events }: { events: Event }) {
                   <div className="flex h-full flex-col justify-between">
                     <div>
                       <p className="mb-6 font-mono text-xs font-semibold uppercase leading-[17.88px] tracking-[-4%] text-[#84B000]">
-                        conference
+                        event
                       </p>
                       <h1 className="mb-6 max-h-[216px] w-[157.33px] font-sans text-[18px] font-semibold leading-[30px] tracking-[-4%] text-[#0F0F0F] lg:w-[180px] lg:text-xl lg:leading-8">
                         {event.theme}
@@ -136,7 +138,7 @@ export default function EventDetails({ events }: { events: Event }) {
                   className="relative h-full w-fit overflow-hidden"
                 >
                   <Image
-                    src={'/images/mtu_image_test.jpg'}
+                    src={event.url}
                     alt={event.theme}
                     width={2000}
                     height={2000}

@@ -86,3 +86,11 @@ export const formatDateToText = (dateString: string | undefined): string => {
 // const inputDate = '2024-11-13'; // Change this to test different inputs
 // const formattedDate = formatDate(inputDate);
 // console.log(formattedDate); // Output: "November 13, 2024"
+export function replacePublicWithStorage(text: string): string {
+  return text.replace(/^public/, 'https://mtu.edu.ng/storage');
+}
+
+// Example usage
+
+// console.log(updatedText);
+// Output: "https://mtu.edu.ng/storage/events/1734080964-convocation_schedule.png"

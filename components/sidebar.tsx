@@ -99,8 +99,8 @@ const informationLinks = [
 const quickLinks = [
   {
     id: '1',
-    destination: 'Open Distance Learning',
-    href: '/odl',
+    destination: 'Open Distance and e-Learning',
+    href: '/ODeL',
   },
   {
     id: '2',

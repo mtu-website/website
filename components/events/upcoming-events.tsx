@@ -18,6 +18,7 @@ import {
   formatDateToText,
   formatTime,
   truncateByCharacters,
+  replacePublicWithStorage,
 } from '@/lib/utils';
 
 interface UpcomingEventsProps {
@@ -44,6 +45,7 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
         startDate: formatDateToText(event.startDate),
         endDate: formatDateToText(event.endDate),
         location: truncateByCharacters(event.location, 50),
+        url: replacePublicWithStorage(event.url),
         isUpcoming,
       };
     });
@@ -155,7 +157,7 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
                     </div>
                   </article>
                   {/* image */}
-                  <Link
+                  {/* <Link
                     href={`/events/${event.uniqueName}`}
                     className="relative w-fit overflow-hidden"
                   >
@@ -165,6 +167,19 @@ const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ events }) => {
                       width={189.33}
                       height={387}
                       className="min-w-[300px] object-cover object-center lg:min-h-[440px]"
+                    />
+                  </Link> */}
+                  {/* image */}
+                  <Link
+                    href={`/events/${event.uniqueName}`}
+                    className="relative h-[387px] w-[189.33px] overflow-hidden lg:min-h-[440px] xl:min-w-[300px]"
+                  >
+                    <Image
+                      src={event.url}
+                      alt={event.theme}
+                      width={2000}
+                      height={2000}
+                      className="h-full w-full object-cover object-center"
                     />
                   </Link>
                 </CarouselItem>

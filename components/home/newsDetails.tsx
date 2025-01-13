@@ -10,6 +10,7 @@ import {
   convertToPlainText,
   formatDate,
   truncateByCharacters,
+  replacePublicWithStorage,
 } from '@/lib/utils';
 
 import { News, RecentNewsProps } from '@/lib/types';
@@ -40,7 +41,7 @@ export default function NewsDetail({ news }: RecentNewsProps) {
           >
             <div className="h-[230px] w-full lg:h-[300px]">
               <Image
-                src="/images/mtu_image_test.jpg"
+                src={replacePublicWithStorage(item.url)}
                 width={2000}
                 height={2000}
                 alt={item.title}

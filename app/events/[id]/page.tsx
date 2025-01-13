@@ -147,7 +147,7 @@ export default async function EventDetail({ params }: { params: Params }) {
 
         <Image
           src="/images/events/calender_image3.svg"
-          alt=""
+          alt="Calendar Icon"
           width="300"
           height="300"
           className="hidden sm:block sm:h-auto sm:w-[377px] lg:h-[555px] lg:w-[500px] xl:w-[648px]"
@@ -155,7 +155,7 @@ export default async function EventDetail({ params }: { params: Params }) {
 
         <Image
           src="/images/events/calender_image_mobile.svg"
-          alt=""
+          alt="Calendar Icon"
           width="300"
           height="300"
           className="visible mt-6 h-auto w-full sm:hidden"
