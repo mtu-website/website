@@ -52,7 +52,7 @@ export default function EventDetails({ events }: { events: Event }) {
       <Carousel>
         <CarouselContent>
           {modifiedEvents
-            .slice(0, 3)
+            .slice(0, 4)
             .filter((event) => !event.isUpcoming)
             .map((event) => (
               <CarouselItem
