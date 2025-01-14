@@ -11,27 +11,31 @@ const faqs = [
   {
     id: 1,
     question: 'Can I get admission into MTU without JAMB?',
-    answer: '',
+    answer:
+      'Yes, you can get admitted into MTU through our Foundation Programme',
   },
   {
     id: 2,
     question: 'How do I log in to my student portal?',
-    answer: '',
+    answer:
+      'Visit the Student Corner page and you will have to your student portal through your matriculation number and password',
   },
   {
     id: 3,
     question: 'How can I get access to my MTU e-mail?',
-    answer: '',
+    answer: 'Visit the ICT center and tender a request as regards that',
   },
   {
     id: 4,
-    question: 'How can I get my transcript',
-    answer: '',
+    question: 'How can I get my official transcript',
+    answer:
+      'Visit the Student Corner page and click on the tab for transcript request',
   },
   {
     id: 5,
     question: 'What are the perks of being an MTU alumni?',
-    answer: '',
+    answer:
+      'Access to global opportunities and receiving first-hand information from the school should endear you to us!',
   },
 ];
 
