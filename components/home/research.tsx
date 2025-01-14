@@ -70,7 +70,7 @@ export default function Research() {
           className={`h-[270px] w-full overflow-hidden lg:h-[444px] lg:w-[443px] xl:h-[444px] xl:w-[592.42px]`}
         >
           <Image
-            src="/images/home/research-image.png"
+            src="/images/research/1724968304016.jpeg"
             alt="Image of a microscope for Research at Mountain Top University"
             width={2000}
             height={2000}
