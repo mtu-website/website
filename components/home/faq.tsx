@@ -10,32 +10,33 @@ import {
 const faqs = [
   {
     id: 1,
-    question: 'Can I get admission into MTU without JAMB?',
+    question: 'Is it possible to gain admission into MTU without JAMB?',
     answer:
-      'Yes, you can get admitted into MTU through our Foundation Programme',
+      'Absolutely! At MTU, we offer a Foundation Programme that provides an alternative pathway to admission. It’s a great opportunity to kickstart your academic journey with us!',
   },
   {
     id: 2,
-    question: 'How do I log in to my student portal?',
+    question: 'How can I log in to my student portal?',
     answer:
-      'Visit the Student Corner page and you will have to your student portal through your matriculation number and password',
+      'Accessing your student portal is quick and easy! Simply visit the Student Corner page, enter your matriculation number as your username, and use your password to log in. If you’re logging in for the first time or need assistance, don’t hesitate to reach out to the ICT Support Team for guidance.',
   },
   {
     id: 3,
-    question: 'How can I get access to my MTU e-mail?',
-    answer: 'Visit the ICT center and tender a request as regards that',
+    question: 'How do I access my MTU email?',
+    answer:
+      'Just stop by the ICT center and submit a request. The friendly team there will guide you through the process and get you set up in no time!',
   },
   {
     id: 4,
-    question: 'How can I get my official transcript',
+    question: 'How do I request my official transcript?',
     answer:
-      'Visit the Student Corner page and click on the tab for transcript request',
+      "It's simple! Head over to the Student Corner page and find the 'Transcript Request' tab. Click on it, follow the instructions, and you're good to go!",
   },
   {
     id: 5,
-    question: 'What are the perks of being an MTU alumni?',
+    question: 'What perks come with being an MTU alumnus?',
     answer:
-      'Access to global opportunities and receiving first-hand information from the school should endear you to us!',
+      'As an MTU alumnus, you unlock a world of global opportunities, exclusive updates from the university, and a lifelong connection to a network of achievers. Stay inspired, stay informed, and stay ahead with MTU!',
   },
 ];
 
