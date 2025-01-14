@@ -18,12 +18,6 @@ const members = [
     status: 'member',
   },
   {
-    id: '4',
-    name: 'Prof. Elijah A. Ayolabi',
-    position: 'Vice Chancellor',
-    status: 'member',
-  },
-  {
     id: '5',
     name: 'Prof. Supo Jegede',
     position: 'Representative of Proprietor',

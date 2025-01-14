@@ -218,7 +218,7 @@ export default function Footer() {
                     <Link href="/library">library</Link>
                   </li>
                   <li>
-                    <Link href="/cegrib">CEGRIB</Link>
+                    <Link href="/research">CEGRIB</Link>
                   </li>
                 </ul>
               </div>
