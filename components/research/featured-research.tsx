@@ -4,7 +4,7 @@ export default function FeaturedResearch() {
   return (
     <section className="flex flex-col gap-6 bg-[#FFF1FF] px-4 py-8 lg:px-12 lg:py-24 xl:flex-row xl:items-center xl:justify-between xl:gap-16">
       <Image
-        src="/images/home/research-image.png"
+        src="/images/research/1724968359508.jpeg"
         alt="Mountain Top University Featured Research"
         width={2000}
         height={2000}
@@ -15,16 +15,20 @@ export default function FeaturedResearch() {
           featured research
         </h4>
         <h1 className="mb-9 font-sans text-2xl font-medium leading-[38.4px] tracking-[-3%] text-[#0F0F0F] sm:text-[32px] sm:leading-[50px] lg:text-4xl lg:leading-[54px]">
-          Comparing XGBoost and LSTM Models for Prediction of Microsoft
-          Corp&apos;s Stock Price Direction
+          Machine learning insights on the effectiveness of non-pharmaceutical
+          interventions against COVID-19 in NigeriaMachine learning insights on
+          the effectiveness of non-pharmaceutical interventions against COVID-19
+          in Nigeria
         </h1>
         <p className="mb-9 font-sans text-[16px] font-normal leading-7 tracking-[-3%] text-[#2E2E2E] lg:text-xl lg:leading-8">
-          This study investigates the effectiveness of XGBoost and LSTM models
-          in predicting the directional changes in Microsoft stock price using
-          incremental values to mitigate inaccuracies in Directional Accuracy
-          Percentage (DAP) evaluations.
+          The lack of effective pharmacological measures during the early phase
+          of the COVID-19 pandemic prompted the implementation of
+          non-pharmaceutical interventions (NPIs) as initial mitigation
+          strategies. The impact of these NPIs on COVID-19 in Nigeria is not
+          well-documented. This study sought to assess the effectiveness of NPIs
+          to support future epidemic responses.
         </p>
-        <Link href="http://mujast.mtu.edu.ng/">
+        <Link href="https://academic.oup.com/inthealth/advance-article/doi/10.1093/inthealth/ihae065/7950357?login=false">
           <span className="inter flex w-fit items-center justify-between text-sm font-semibold text-[#84B000] lg:text-[16px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
