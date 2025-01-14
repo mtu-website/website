@@ -10,28 +10,41 @@ import {
 const faqs = [
   {
     id: 1,
-    question: 'Getting your transcript',
-    answer: '',
+    question:
+      'How can I get an official recommendation letter for future endeavors?',
+    answer:
+      'You can obtain a recommendation letter by visiting your department and speaking with your Head of Department (HOD).',
   },
   {
     id: 2,
-    question: 'What if I don’t receive my certificate?',
-    answer: '',
+    question:
+      'What documents do I need to bring along to collect my certificate?',
+    answer:
+      "You'll need your Statement of Purpose, School ID card, and Convocation receipt.",
   },
   {
     id: 3,
-    question: 'The name on my certificate is wrong',
-    answer: '',
+    question: 'What should I do if I’ve misplaced my ID card?',
+    answer:
+      'Visit a Federal or State High Court to obtain an official affidavit, duly stamped and signed.',
   },
   {
     id: 4,
-    question: 'Can I get a replacement certificate?',
-    answer: '',
+    question: 'What should I do if the name on my certificate is incorrect?',
+    answer:
+      "Report this issue to the Registrar's Office to initiate the correction process.",
   },
   {
     id: 5,
-    question: 'What are the perks of being an MTU alumni?',
-    answer: '',
+    question: 'Can I get a replacement for my certificate?',
+    answer:
+      "Yes, replacement certificates are available. Please contact the Registrar's Office with valid proof of your request.",
+  },
+  {
+    id: 6,
+    question: 'How can I give back to the school?',
+    answer:
+      'We love alumni support! Reach out to the Alumni Relations Office to discuss how you can contribute.',
   },
 ];
 
