@@ -16,9 +16,9 @@ export default function FeaturedResearch() {
         </h4>
         <h1 className="mb-9 font-sans text-2xl font-medium leading-[38.4px] tracking-[-3%] text-[#0F0F0F] sm:text-[32px] sm:leading-[50px] lg:text-4xl lg:leading-[54px]">
           Machine learning insights on the effectiveness of non-pharmaceutical
-          interventions against COVID-19 in NigeriaMachine learning insights on
-          the effectiveness of non-pharmaceutical interventions against COVID-19
-          in Nigeria
+          interventions against COVID-19 in Nigeria. Machine learning insights
+          on the effectiveness of non-pharmaceutical interventions against
+          COVID-19 in Nigeria
         </h1>
         <p className="mb-9 font-sans text-[16px] font-normal leading-7 tracking-[-3%] text-[#2E2E2E] lg:text-xl lg:leading-8">
           The lack of effective pharmacological measures during the early phase

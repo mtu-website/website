@@ -36,8 +36,8 @@ export default function Scholarships() {
                 with over 500 beneficiaries receiving scholarships ranging from
                 partial to full coverage for tuition and feeding. This is our
                 way of helping brilliant and dedicated students who might lack
-                the means to pursue their dreams get education they can get from
-                our institution.{' '}
+                the means of pursuing their dream of getting quality education
+                they can get from our institution.{' '}
                 <Link
                   href="study-at-mtu"
                   className="inline-flex items-center text-[16px] font-semibold leading-[27.68px] tracking-[-3%] text-[#84B000]"

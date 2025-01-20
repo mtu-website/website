@@ -17,7 +17,7 @@ export const ranks = [
     color: '#279B48',
     src: '/images/2.svg',
     sdg: 'sdg3',
-    description: 'Good Health and  Wellbeing',
+    description: 'Good Health and Wellbeing',
     year: '2024',
     position: 'Top 2 (Nigeria)',
     coloredText:
@@ -36,7 +36,7 @@ export const ranks = [
     coloredText:
       'We are rated among the top 3 universities in Nigeria for Zero-Hunger',
     plainText:
-      'Our focus on making food available for all has placed MTU as the the third best university in Nigeria for zero-hunger. We lead efforts to address food security through our modern agricultural projects and feed-in community initiatives. Our students learn the importance of social responsibility through active involvement, preparing them to create meaningful change in the society around them.',
+      'Our focus on making food available for all has placed MTU as the the third best university in Nigeria for zero-hunger. We lead efforts to address food security through our modern agricultural projects and feed-in community initiatives. Our students learn the importance of social responsibility through active involvement, preparing them to create meaningful change in society around them.',
   },
   {
     number: 5,
@@ -49,7 +49,7 @@ export const ranks = [
     coloredText:
       'We are rated among the top 5 universities in Nigeria for Partnership with the Goals',
     plainText:
-      'Mountain Top University is known for building strong ties with industry partners, governmental institutions, and neighbouring communities. This made us ranked amongst the top 5 universities in Nigeria for Partnership with the Goals. Through these partnerships, we open effectual doors and prepare our students for impactful careers and drive progress towards a sustainable future',
+      'Mountain Top University is known for building strong ties with industry partners, governmental institutions, and neighbouring communities. This is why we are ranked among top 5 universities in Nigeria for Partnership with the Goals. Through these partnerships, we open effectual doors and prepare our students for impactful careers and drive progress towards a sustainable future',
   },
 ];
 

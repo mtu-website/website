@@ -20,7 +20,7 @@ export default function Manpower() {
           <div className="items-center lg:flex lg:gap-12 xl:gap-24">
             <article>
               <p className="font-sans text-[16px] font-medium leading-[27.68px] tracking-[-3%] text-[#6F6F6F] xl:min-w-[800px]">
-                Our members of the staff are knowledgeable, dedicated and also
+                Our members of staff are knowledgeable, dedicated and also
                 possess practical experimental knowledge. All of our lecturers
                 are exceptional academic professionals in their respective
                 fields, willing to shape students into critical thinkers and

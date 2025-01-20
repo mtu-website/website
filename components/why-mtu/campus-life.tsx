@@ -53,7 +53,7 @@ export default function CampusLife() {
                 <span className="font-semibold italic text-[#84B000]">
                   Safety and wellness
                 </span>{' '}
-                are a priority at MTU. We offer round-the-clock security, a
+                are our priorities at MTU. We offer round-the-clock security, a
                 medical centre, and mental wellness programmes to ensure that
                 every student feels secure and supported. Our goal is to create
                 a balanced environment where students can focus on academics

@@ -27,7 +27,7 @@ export default function Footer() {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                'The only University on top of the Mountain',
+                'The only University on top of a Mountain',
                 4000, // wait 1s before replacing "Mice" with "Hamsters"
                 'Empowered to excel',
                 8000,
@@ -228,7 +228,7 @@ export default function Footer() {
         <div className="items-center justify-between bg-[#000000] px-5 py-6 font-mono sm:flex">
           <article className="mb-5 font-mono text-xs font-medium leading-[13.68px] text-white lg:mb-0 lg:text-sm">
             <span>
-              &#169; 2024 Mountain Top University. All rights reserved.
+              &#169; 2025 Mountain Top University. All rights reserved.
             </span>
           </article>
           <div className="font-mono text-[10px] font-semibold leading-[13.68px] text-white lg:text-sm">
