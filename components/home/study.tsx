@@ -63,7 +63,7 @@ export default function StudyAtMtu() {
         <article className="lg:w-[660px] xl:w-[680px] 2xl:w-[1100px]">
           <p className="font-sans text-[16px] font-normal leading-8 tracking-[-4%] text-[#5E5E5E]">
             Choosing Mountain Top University Nigeria (MTU) means committing to a
-            future of excellence, innovation, and global impact since MTU is
+            future of excellence, innovation, and global impact because MTU is
             ranked 1st in the nation for Quality Education. Here, you’ll benefit
             from a dynamic learning environment that integrates cutting-edge
             research, intensive skills acquisition and community engagement.
