@@ -10,7 +10,7 @@ const colleges = [
   },
   {
     id: '2',
-    name: 'College of Humanities and Management Sciences',
+    name: 'College of Humanities, Social and Management Sciences',
     url: '/colleges/college-of-humanities-and-management-sciences',
     imageUrl: '/images/colleges/chms_image.png',
   },
