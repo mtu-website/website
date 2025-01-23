@@ -3,7 +3,7 @@ import Link from 'next/link';
 import NewsDetail from './newsDetails';
 
 export default async function News() {
-  const data = await fetch('https://mtu.edu.ng/api/mtu-news');
+  const data = await fetch('https://media.mtu.edu.ng/api/mtu-news');
   const news = await data.json();
 
   return (

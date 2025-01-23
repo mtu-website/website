@@ -89,7 +89,7 @@ export const formatDateToText = (dateString: string | undefined): string => {
 // const formattedDate = formatDate(inputDate);
 // console.log(formattedDate); // Output: "November 13, 2024"
 export function replacePublicWithStorage(text: string): string {
-  return text.replace(/^public/, 'https://mtu.edu.ng/storage');
+  return text.replace(/^public/, 'https://media.mtu.edu.ng/storage');
 }
 
 // Example usage

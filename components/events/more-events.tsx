@@ -5,8 +5,8 @@ import { Event } from '@/lib/types';
 import { replacePublicWithStorage, pickRandomEvents } from '@/lib/utils';
 import Link from 'next/link';
 
-const events = await fetch(`https://mtu.edu.ng/api/mtu-events`).then((res) =>
-  res.json(),
+const events = await fetch(`https://media.mtu.edu.ng/api/mtu-events`).then(
+  (res) => res.json(),
 );
 
 export default function MoreEvents() {

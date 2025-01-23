@@ -39,9 +39,8 @@ export default function Links() {
             </h3>
             <p className="font-sans text-[16px] font-normal leading-9 tracking-[-4%] text-[#5E5E5E]">
               For all general inquiries about Mountain Top University, please
-              call
-              <span className="font-semibold"> +2347039395024</span> or reach us
-              at{' '}
+              reach us
+              <span className="font-semibold">at </span>
               <Link className="text-[#84B000] underline" href="">
                 support@mtu.edu.ng
               </Link>

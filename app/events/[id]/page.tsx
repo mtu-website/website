@@ -21,9 +21,9 @@ export default async function EventDetail({ params }: { params: Params }) {
 
   const { id } = await params;
 
-  const event = await fetch(`https://mtu.edu.ng/api/mtu-events/${id}`).then(
-    (res) => res.json(),
-  );
+  const event = await fetch(
+    `https://media.mtu.edu.ng/api/mtu-events/${id}`,
+  ).then((res) => res.json());
   // const parsedContent = parse(event.content);
 
   return (

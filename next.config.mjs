@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['mtu.edu.ng'],
+    domains: ['media.mtu.edu.ng'],
   },
 };
 

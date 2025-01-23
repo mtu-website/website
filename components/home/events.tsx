@@ -4,7 +4,7 @@ import Link from 'next/link';
 import EventDetails from './eventDetails';
 
 export default async function Events() {
-  const data = await fetch('https://mtu.edu.ng/api/mtu-events');
+  const data = await fetch('https://media.mtu.edu.ng/api/mtu-events');
   const events = await data.json();
 
   return (
